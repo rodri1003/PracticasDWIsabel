@@ -1,0 +1,142 @@
+/* Estilo básico del cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #AAA4AC;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Contenedor de la fila */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de las columnas */
+.col-3, .col-6, .col-12 {
+    padding: 15px;
+}
+
+/* Columna del menú */
+.col-3.menu {
+    flex: 25%;
+    background-color: #0d1826;
+    color: white;
+}
+
+/* Contenido principal */
+.col-6 {
+    flex: 50%;
+    background-color: #F5F5F5;
+}
+
+.col-3.right-column {
+    flex: 25%;
+    background-color: #1a113b;
+    text-align: center;
+}
+
+/* Columna adicional (derecha) */
+.col-3.right-column {
+    flex: 25%;
+    background-color: #AAA4AC;
+}
+
+/* Secciones del menú */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #c1305a;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para imágenes en las secciones */
+.section-img {
+    max-width: 35%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos personalizados para cada sección */
+.section-content {
+    overflow: hidden;
+}
+
+.eclipse-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.intensamente-section {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.villano-section {
+    background-color: #d35400;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.malefica-section {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Alternar alineación de imágenes */
+.eclipse-section .section-img {
+    float: left;
+    margin-right: 15px;
+}
+
+.intensamente-section .section-img {
+    float: right;
+    margin-left: 15px;
+}
+
+.villano-section .section-img {
+    float: left;
+    margin-right: 15px;
+}
+
+.malefica-section .section-img {
+    float: right;
+    margin-left: 15px;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .col-3, .col-6 {
+        flex: 100%;
+    }
+
+    .section-img {
+        float: none;
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+}
