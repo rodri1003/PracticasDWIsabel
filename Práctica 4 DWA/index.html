@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Paciente</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Formulario de Paciente -->
+        <form class="form-paciente">
+            <h2 class="text-center text-primary mb-4">Registro de Paciente</h2>
+            <p class="text-center text-muted">Complete los siguientes datos</p>
+
+            <!-- Nombre Completo -->
+            <div class="form-group">
+                <label for="nombre">Nombre Completo <span class="text-danger">*</span></label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fecha de Nacimiento -->
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha-nacimiento" required>
+            </div>
+
+            <!-- Género -->
+            <div class="form-group">
+                <label for="genero">Género</label>
+                <select class="form-control" id="genero" required>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <!-- Número de Teléfono -->
+            <div class="form-group">
+                <label for="telefono">Número de Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Número de Teléfono" required>
+            </div>
+
+            <!-- Botón Enviar -->
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

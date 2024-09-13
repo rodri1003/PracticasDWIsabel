@@ -1,0 +1,39 @@
+/* Estilo general para el contenedor */
+.container {
+    margin-top: 20px;
+}
+
+/* Estilos para la Fila 1 */
+.img-full-width {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center;
+}
+
+/* Estilos para la imagen en Fila 2 */
+.img-left {
+    width: 100%;
+    max-width: 600px; /* Ajuste del tamaño máximo */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen en Fila 3 */
+.img-right {
+    width: 100%;
+    max-width: 600px; /* Ajuste del tamaño máximo */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las imágenes en Fila 4 */
+.img-small {
+    width: 100%;
+    max-width: 400px; /* Ajuste del tamaño máximo */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
