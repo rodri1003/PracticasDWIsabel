@@ -1,0 +1,16 @@
+/* Estilos para el botón */
+#miBoton {
+    font-size: 18px; /* Tamaño de la fuente del texto dentro del botón */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    background-color: #da2c66; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano cuando está sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+/* Cambiar el color de fondo cuando el botón es hover */
+#miBoton:hover {
+    background-color: #54eb26; /* Color de fondo al pasar el mouse por encima */
+}
