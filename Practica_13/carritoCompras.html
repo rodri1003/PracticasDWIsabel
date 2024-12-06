@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <main class="container mt-5">
+        <div class="row text-center ">
+            <!-- Productos -->
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresas 🍓 </h5>
+                        <p class="lead">$300</p>
+                         <button class="btn btn-primary btn-sm" data-fruta="fresas" data-precio="300">Agregar</button>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> Banana 🍌 </h5>
+                        <p class="lead">$100</p>
+                         <button class="btn btn-primary btn-sm" data-fruta="bananas" data-precio="100">Agregar</button>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> Sandias 🍉</h5>
+                        <p class="lead">$200</p>
+                         <button class="btn btn-primary btn-sm" data-fruta="sandias" data-precio="200">Agregar</button>
+                    </div>
+                </div>
+            </article>        
+        </div>
+    </main>
+
+    <section class="container mt-3">
+        <ul class="list-group" id="carrito"></ul>
+    </section>
+    <!-- Footer -->
+     <footer id="footer" class="container mt-3">
+        <div class="card d-none" id="footerCard">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <p class="lead mb-0"> Total a Pagar : $<span id ="totalAmount">0</span></p>
+            </div>
+        </div>
+     </footer>
+     
+     <template id="template">
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-secondary text-white" >
+            <span class="badge bg-primary rounded-pill allign-middle">1</span>
+            <span class="lead align-middle">A list item</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <p class ="lead mb-0">Total: $ <span>0</span></p>
+            </div>
+            <div>
+                <button class="btn btn-sm btn-success">Agregar</button>
+                <button class="btn btn-sm btn-danger">Eliminar</button>
+            </div>
+        </li>
+     </template>
+</body>
+</html>
