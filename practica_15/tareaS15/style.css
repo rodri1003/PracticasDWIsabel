@@ -1,0 +1,57 @@
+/* Estilos generales para las pestañas */
+.tab-button {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+    font-size: 17px;
+}
+/* Le agregue eto para que se diferencie de las pestañas */
+h1:hover{
+    background-color: #f1f1f1;
+}
+
+/* Cambia el color de fondo de la pestaña activa */
+.tab-button.active {
+    background-color: #555;
+    color: white;
+}
+
+/* Estilo para el contenido de la pestaña */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-top: none;
+}
+/* Pa que se vea mas chido el cursor */
+.title-button{
+    cursor: pointer;
+}
+/* Muestra el contenido  */
+.active-content {
+    display: block;
+}
+/* No sabia que con # se selecionaba las id */
+#Tab1{
+    background-color: aqua;
+    border-radius: black;
+}
+#Tab2{
+    background-color: #fdd;
+    border-radius: black;
+}
+#Tab3{
+    background-color: rgb(162, 255, 0);
+    border-radius: black;
+}
+#TAB3{
+    background-color:  #fdd;
+}
+#TAB2{
+    background-color: aqua;
+}
+#TAB1{
+    background-color: rgb(162, 255, 0);
+}

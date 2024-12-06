@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 15</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Le agregue un poco de bootstrap -->
+
+</head>
+<body class="ligth-theme">
+    <!-- Pa que se pueda reiniciar la pestaña sin nesecidad de estar volviendo el programa a 0 -->
+    <h1 class="title-button active" onclick="openTab(event, '')">Sistema de pestañas TAB</h1>
+    <!-- Crear un div que abarque los buttons de las pestañas -->
+    <div class="tabs" >
+        <!-- tab-button active nombrar la clase -->
+         <!-- evento seria el onclick="para abrir lo que hace click y openTab abrir la pestaña" -->
+        <button class="tab-button active" onclick="openTab(event, 'Tab1')" id="TAB1">Primera pestaña</button>
+        <button class="tab-button" onclick="openTab(event, 'Tab2')"id ="TAB2">Segunda Pestaña</button>
+        <button class="tab-button" onclick="openTab(event, 'Tab3')"id="TAB3">Tercer pestaña</button>
+        <!-- Se aplica en las 3 pestañas -->
+    </div>
+        <div id="Tab1" class="tab-content">
+            <h2>Pestaña 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, facere aut nisi dolorem tempore tenetur at incidunt atque eius. Aperiam aliquam eveniet numquam aut voluptate ad accusamus impedit distinctio temporibus.</p>
+        </div>
+        <div id="Tab2" class="tab-content">
+            <h2>Segundo pestaña</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium architecto nesciunt exercitationem aut iusto dolore dolorem culpa unde? Atque quo hic illo, fugiat labore sunt amet architecto odit magnam!</p>
+        </div>
+        <div id="Tab3" class="tab-content">
+            <h2>Tercera pestaña</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quis tenetur quaerat vitae, delectus accusamus, sequi ipsum, aspernatur odit omnis qui deserunt et voluptatem necessitatibus reiciendis saepe placeat quod? Architecto!</p>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
